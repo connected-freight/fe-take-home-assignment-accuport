@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { Switch, Route, Link } from "react-router-dom";
 
-import Q1 from "questions/q1";
-
 import "./App.css";
+
+const MainQuestionPage = React.lazy(() => import("questions/q1")); // Lazy-load
 
 function App() {
   return (
@@ -54,8 +54,14 @@ function App() {
             </p>
             <p>
               You have 5 days to complete this task, best of luck! if you have
-              any questions you can contact nico@connectedfreight.com and
-              jaenal@connectedfreight.com
+              any questions you can contact{" "}
+              <a href="mailto:nico@connectedfreight.com">
+                nico@connectedfreight.com
+              </a>{" "}
+              and{" "}
+              <a href="mailto:jaenal@connectedfreight.com">
+                jaenal@connectedfreight.com
+              </a>
             </p>
             <p>Key things we are focusing on are:</p>
             <ul>
@@ -84,7 +90,11 @@ function App() {
             </ul>
           </div>
         </Route>
-        <Route path="/questions/1" component={Q1}></Route>
+        <Route path="/questions/1">
+          <Suspense fallback={<p>loading...</p>}>
+            <MainQuestionPage />
+          </Suspense>
+        </Route>
       </Switch>
     </div>
   );
