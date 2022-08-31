@@ -1,0 +1,47 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "cypress",
+      "problemMatcher": [],
+      "label": "Open Cypress",
+      "detail": "npx cypress open"
+    },
+    {
+      "type": "npm",
+      "script": "start",
+      "problemMatcher": ["$eslint-stylish"],
+      "label": "Start",
+      "detail": "react-scripts --max_old_space_size=4096 start"
+    },
+    {
+      "type": "shell",
+      "problemMatcher": [],
+      "label": "Coverage",
+      "detail": "Generate and open code coverage report",
+      "command": "CI=1 npm test -- --coverage --no-cache && open coverage/lcov-report/index.html"
+    },
+    {
+      "type": "shell",
+      "problemMatcher": [],
+      "label": "Check",
+      "command": "npm run lint -- --max-warnings 0 && npm run tsc && CI=1 npm test && ./node_modules/.bin/cypress run"
+    },
+    {
+      "type": "shell",
+      "command": "npm install",
+      "problemMatcher": [],
+      "label": "NPM Install",
+      "detail": "install dependencies from package"
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      "group": "test",
+      "problemMatcher": [],
+      "label": "Test Watch",
+      "detail": "react-scripts test"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "files.exclude": {
+    "dist": true,
+    "coverage": true,
+    "node_modules": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "eslint.format.enable": true,
+  "editor.formatOnSave": true,
+  "editor.spaces": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

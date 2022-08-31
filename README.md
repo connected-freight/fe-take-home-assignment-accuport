@@ -1,46 +1,89 @@
-# Getting Started with Create React App
+# Connected Freight Accuport FE Take-home Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hello there 👋! Thank you for taking this interview 🙏 and congratulations on making it this far 🎉.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+There are 4 task in total for this assignment, and should take no more than 5 days to complete. Please complete them in order:
 
-### `npm start`
+- Task 1 - Rendering Solution
+- Task 2 - Problem Solving (Performance of user experiences)
+- Task 3 - Unit Testing(optional)
+- Task 4 - Documentation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Each task has instructions and expectations. Please try to follow them and let us know, if you have any issues/concerns. You are expected to complete this tasks within 5 days. Feel free to use any resources you find online. You may take longer if you like, but do inform us in advance 😊
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+Key things we are focusing on are:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [x] Problem solving.
+- [x] Follow best practices.
+- [x] Code readability.
+- [x] Code structure.
+- [x] Naming of parameters, functions, types, classes, and fields.
+- [x] OOP/FP concepts.
+- [x] Appropriate use of comments.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> IMPORTANT: It is highly recommended that you read the problem statement thoroughly before you jump straight into the code and follow the instructions especially on the documenting part :)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+As GitHub does not allow the forking of public repos to private repos, what you need to do instead is to clone this repo into a new personal private repo.
 
-### `npm run eject`
+### 1. Create a new private repo
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+When creating a new private repo in GitHub, name the repo any way you like (but preferably `fe-take-home-assignment-accuport` if you want to follow the instructions below as it is), set it to private, and **do not initialize the repository with anything**.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2. Clone this repo to your local filesystem
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+git clone https://github.com/connected-freight/fe-take-home-assignment-accuport.git fe-take-home-assignment-accuport
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### 3. Add your remote and push
 
-## Learn More
+Assuming that you are using `fe-take-home-assignment-accuport` as your repo name:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+cd fe-take-home-assignment-accuport
+git remote rename origin upstream
+git remote add origin https://github.com/<your-username>/fe-take-home-assignment-accuport.git
+git push origin main
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Now you can work with it just like any other GitHub repo.
+
+### 4. Setup development environment
+
+#### Install development tools
+
+The following tools are required:
+
+1. [Node.js](https://nodejs.org/en/)
+2. [Yarn 1](https://classic.yarnpkg.com/en/docs/install)
+3. A TypeScript-compatible IDE (We suggest [Visual Studio Code](https://code.visualstudio.com/))
+
+#### Install project dependencies
+
+```
+npm install or yarn install
+```
+
+#### Run tests
+
+```
+npm run test or yarn test
+```
+
+---
+
+## Submission
+
+When you are ready to submit, push all of your changes, and add `nico@connectedfreight.com` and `jaenal@connectedfreight.com` as a collaborator to your repo for grading 😊
+
+---
+
+Best of luck 👍!
