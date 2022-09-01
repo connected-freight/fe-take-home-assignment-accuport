@@ -8,7 +8,7 @@ There are 4 task in total for this assignment, and should take no more than 5 da
 
 - Task 1 - Rendering Solution
 - Task 2 - Problem Solving (Performance of user experiences)
-- Task 3 - Unit Testing(optional)
+- Task 3 - Unit Testing (optional)
 - Task 4 - Documentation
 
 Each task has instructions and expectations. Please try to follow them and let us know, if you have any issues/concerns. You are expected to complete this tasks within 5 days. Feel free to use any resources you find online. You may take longer if you like, but do inform us in advance 😊
